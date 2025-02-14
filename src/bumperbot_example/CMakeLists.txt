@@ -16,5 +16,9 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-
+catkin_install_python(PROGRAMS 
+    nodes/simplee_publisher.py
+    #nodes/simple_subscriber.py
+    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
